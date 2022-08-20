@@ -1,0 +1,97 @@
+{
+  "project_info": {
+    "project_number": "153848635083",
+    "project_id": "pushnotification-49d89",
+    "storage_bucket": "pushnotification-49d89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153848635083:android:29e1d32239765b6072454e",
+        "android_client_info": {
+          "package_name": "com.fominha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153848635083-f8ma2g874cbfs32cci7lt9juomb7f35h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1pppWWS2ka99rmdt7rLB-wQjPbje5vak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153848635083-f8ma2g874cbfs32cci7lt9juomb7f35h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153848635083:android:5b6e8ec4503e3a3172454e",
+        "android_client_info": {
+          "package_name": "com.pushnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153848635083-f8ma2g874cbfs32cci7lt9juomb7f35h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1pppWWS2ka99rmdt7rLB-wQjPbje5vak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153848635083-f8ma2g874cbfs32cci7lt9juomb7f35h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153848635083:android:4e5c0d9d4f23257372454e",
+        "android_client_info": {
+          "package_name": "com.receitascaseiras"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "153848635083-f8ma2g874cbfs32cci7lt9juomb7f35h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1pppWWS2ka99rmdt7rLB-wQjPbje5vak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "153848635083-f8ma2g874cbfs32cci7lt9juomb7f35h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
