@@ -91,7 +91,7 @@ export default function App() {
             activeTintColor: '#442C2E',
             inactiveTintColor: '#442C2E'
           }}>
-          <Tab.Screen name="Home" component={HomeStack} options={{ title: 'D. Anilda Receitas Caseiras' }} />
+          <Tab.Screen name="Home" component={HomeStack} options={{ title: 'Receitas Caseiras' }} />
           <Tab.Screen name="Sobre" component={Sobre} />
         </Tab.Navigator>
       </NavigationContainer>

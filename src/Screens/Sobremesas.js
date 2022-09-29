@@ -1,66 +1,52 @@
 import React from 'react';
-import { View, Text, ScrollView, Image, StyleSheet } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
+import { Avatar, Card, Paragraph } from 'react-native-paper';
 
 let img = require('../Image/brigadeiro.jpg')
+const LeftContent = props => <Avatar.Icon {...props} icon="cupcake" style={{ backgroundColor: "#442C2E" }} />
 
 function Sobremesas() {
     return (
+
 <ScrollView>
-        <View style={styles.container}>
-        <View>
-            <Image source={img} style={styles.Imagem}></Image>
-        </View>
-            <Text style={styles.subtitle}>Brigadeiro com flocos de arroz</Text>
-            <Text style={styles.section}>Ingredientes:</Text>
-            <Text style={styles.textContent}>- 1 colher de sopa de manteiga sem sal</Text>
-            <Text style={styles.textContent}>- 2 colheres de sopa de chocolate em pó</Text>
-            <Text style={styles.textContent}>- 1 lata de leite condensado</Text>
-            <Text style={styles.textContent}>- 1 xícara de chá de flocos de arroz</Text>
-            <Text style={styles.tarefas}>Modo de preparo:</Text>
-            <Text style={styles.textContent}>Em uma panela, derreta a manteiga e dissolva o chocolate em pó. Acrescente o leite condensado, misture bem e
+            <Card style={styles.card}>
+                <Card.Cover source={img} />
+                <Card.Title title="Brigadeiro com flocos de arroz" subtitle="Ingredientes:" left={LeftContent} style={styles.color} />
+                <Card.Content style={styles.color}>
+                    <Paragraph>- 1 colher de sopa de manteiga sem sal</Paragraph>
+                    <Paragraph>- 2 colheres de sopa de chocolate em pó</Paragraph>
+                    <Paragraph>- 1 lata de leite condensado</Paragraph>
+                    <Paragraph>- 1 xícara de chá de flocos de arroz</Paragraph>
+                    <Paragraph style={styles.tarefas}>Modo de preparo:</Paragraph>
+                    <Paragraph style={styles.textContent}>Em uma panela, derreta a manteiga e dissolva o chocolate em pó. Acrescente o leite condensado, misture bem e
             cozinhe mexendo em fogo baixo até aparecer o fundo da panela. Esfrie um pouco, acrescente os flocos de arroz
-            e coloque em pequenos recipientes para servir.</Text>
-        </View>
+            e coloque em pequenos recipientes para servir.</Paragraph>
+                </Card.Content>
+            </Card>
         </ScrollView>
     );
 }
 const styles = StyleSheet.create({
-    container:{
-        flex: 1
-    },
-    Imagem:{
-        alignSelf:'center',
-        width: 400,
-        height: 200,
-    },
-    subtitle:{
-        textAlign:'center',
-        fontSize: 18,
-        color: '#442C2E',
-        margin:5,
-        fontWeight: 'bold',
-    },
-    section:{
-        textAlign:'left',
-        fontSize: 16,
-        color: '#442C2E',
-        marginLeft: 20,
-        fontWeight: 'bold',
-    },
-    tarefas:{
-        textAlign:'left',
+    
+    tarefas: {
+        textAlign: 'left',
         fontSize: 14,
         color: '#442C2E',
         marginLeft: 10,
         fontWeight: 'bold',
     },
-    textContent:{
-        textAlign:'left',
+    textContent: {
+        textAlign: 'justify',
         color: '#442C2E',
-        marginLeft: 10,
-    }
-    
+        margin: 10
+    },
+    color: {
+        backgroundColor: "#fff8e7"
+    },
 
+    card:{
+        margin: 5
+    }
 })
 
 export default Sobremesas;
